@@ -10,8 +10,8 @@ namespace ExamApp.Controllers;
 [ApiController]
 public class DersController : ControllerBase
 {
-    private readonly IDersService _dersService;
-    public DersController(ExamAppDbContext dbContext, IDersService dersService)
+    private readonly IDersRepository _dersService;
+    public DersController(ExamAppDbContext dbContext, IDersRepository dersService)
     {
         _dersService = dersService;
     }

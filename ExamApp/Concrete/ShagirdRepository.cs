@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ExamApp.Concrete;
 
-public class ShagirdService : IShagirdService
+public class ShagirdRepository : IShagirdRepository
 {
     ExamAppDbContext _dbContext;
 
-    public ShagirdService(ExamAppDbContext dbContext)
+    public ShagirdRepository(ExamAppDbContext dbContext)
     {
         _dbContext = dbContext;
     }

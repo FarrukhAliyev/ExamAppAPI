@@ -2,7 +2,7 @@
 
 namespace ExamApp.Abstraction;
 
-public interface IDersService
+public interface IDersRepository
 {
     Task<List<Ders>> FetchAllAsync();
 

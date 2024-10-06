@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ExamApp.Concrete;
 
-public class ImtahanService : IImtahanService
+public class ImtahanRepository : IImtahanRepository
 {
     ExamAppDbContext _dbContext;
 
-    public ImtahanService(ExamAppDbContext dbContext)
+    public ImtahanRepository(ExamAppDbContext dbContext)
     {
         _dbContext = dbContext;
     }

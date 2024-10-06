@@ -7,8 +7,8 @@ public static class ServiceManagementExtension
 {
     public static void AddServiceManagementExtension(this IServiceCollection services)
     {
-        services.AddScoped<IDersService, DersService>();
-        services.AddScoped<IImtahanService, ImtahanService>();
-        services.AddScoped<IShagirdService, ShagirdService>();
+        services.AddScoped<IDersRepository, DersRepository>();
+        services.AddScoped<IImtahanRepository, ImtahanRepository>();
+        services.AddScoped<IShagirdRepository, ShagirdRepository>();
     }
 }

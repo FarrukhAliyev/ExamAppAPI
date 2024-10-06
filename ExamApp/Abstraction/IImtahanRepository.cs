@@ -2,7 +2,7 @@
 
 namespace ExamApp.Abstraction;
 
-public interface IImtahanService
+public interface IImtahanRepository
 {
     Task<List<Imtahan>> FetchAllAsync();
 

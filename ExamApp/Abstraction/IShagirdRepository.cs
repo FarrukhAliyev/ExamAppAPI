@@ -2,7 +2,7 @@
 
 namespace ExamApp.Abstraction;
 
-public interface IShagirdService
+public interface IShagirdRepository
 {
     Task<List<Shagird>> FetchAllAsync();
 

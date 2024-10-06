@@ -10,8 +10,8 @@ namespace ExamApp.Controllers;
 [ApiController]
 public class ShagirdController : ControllerBase
 {
-    private readonly IShagirdService _dersService;
-    public ShagirdController(ExamAppDbContext dbContext, IShagirdService dersService)
+    private readonly IShagirdRepository _dersService;
+    public ShagirdController(ExamAppDbContext dbContext, IShagirdRepository dersService)
     {
         _dersService = dersService;
     }

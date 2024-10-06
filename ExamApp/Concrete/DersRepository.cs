@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ExamApp.Concrete;
 
-public class DersService : IDersService
+public class DersRepository : IDersRepository
 {
     ExamAppDbContext _dbContext;
 
-    public DersService(ExamAppDbContext dbContext)
+    public DersRepository(ExamAppDbContext dbContext)
     {
         _dbContext = dbContext;
     }

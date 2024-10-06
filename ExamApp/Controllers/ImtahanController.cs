@@ -10,8 +10,8 @@ namespace ExamApp.Controllers;
 [ApiController]
 public class ImtahanController : ControllerBase
 {
-    private readonly IImtahanService _dersService;
-    public ImtahanController(ExamAppDbContext dbContext, IImtahanService dersService)
+    private readonly IImtahanRepository _dersService;
+    public ImtahanController(ExamAppDbContext dbContext, IImtahanRepository dersService)
     {
         _dersService = dersService;
     }
